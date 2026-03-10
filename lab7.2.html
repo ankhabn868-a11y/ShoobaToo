@@ -14,10 +14,21 @@
 <input type="text" id="check">
 
 <button onclick="shalga()">Шалгах</button>
-
-<button>0</button>
-<button>1</button>
 <Br>
+    <br>
+<button onclick="add(0)">0</button>
+<button onclick="add(1)">1</button>
+<button onclick="add(2)">2</button>
+<button onclick="add(3)">3</button>
+<button onclick="add(4)">4</button>
+<button onclick="add(5)">5</button>
+<button onclick="add(6)">6</button>
+<button onclick="add(7)">7</button>
+<button onclick="add(8)">8</button>
+<button onclick="add(9)">9</button>
+<button onclick="clearInput()">clear</button>
+<Br>
+    <br>
 <a href="index.html">1 дахь page руу орох</a>
 <script>
 
@@ -54,7 +65,12 @@ function shalga() {
     }
 
 }
-
+function add(n) {
+    document.getElementById("check").value += n;
+}
+function clearInput() {
+    document.getElementById("check").value = "";
+}
 </script>
 
 </body>
